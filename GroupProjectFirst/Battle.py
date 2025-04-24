@@ -1,12 +1,12 @@
-from Personage import *
-from Creature import *
+from Player import *
+from Enemy import *
 import random
 
 class Battle:
 
     def __init__(self, game):
         self.game = game
-        self.personage = game.personage
+        self.player = game.player
 
 
     def select_creature(self):
@@ -22,6 +22,7 @@ class Battle:
 
             if user_choice in range(len(self.game.creatures)):
                 self.creature = self.game.creatures[int(user_choice)]
+                self.creature.level = self.creature.level_random(self.player.level)
                 creature_selected = True
                 print("You selected {}".format(self.creature.name))
             else:
@@ -31,13 +32,13 @@ class Battle:
 
     def battle_process(self):
         input("Press any key to start the battle")
-        if self.personage.level > self.creature.level:
+        if self.player.level > self.creature.level:
             print("Congratulations! You won!")
-            self.personage.level += 1
+            self.player.level += 1
         else:
             print("You lost")
-            self.personage.health -= 1
-        print("Your level is now {}, your health is {}".format(self.personage.level, self.personage.health))
+            self.player.health -= 1
+        print("Your level is now {}, your health is {}".format(self.player.level, self.player.health))
 
 
 
