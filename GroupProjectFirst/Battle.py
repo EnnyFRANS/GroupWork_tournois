@@ -12,7 +12,7 @@ class Battle:
     def select_creature(self):
         creature_selected = False
         while not creature_selected:
-            print("Please select an enemy")
+            print("Please select an enemy for your next fight")
             for i in range(len(self.game.creatures)):
                 print("{} - {}".format(i+1, self.game.creatures[i].name))
             user_input  = input()
@@ -36,10 +36,10 @@ class Battle:
         input("Press any key to start the battle")
         if self.player.level > self.creature.level:
             print("Congratulations! You won!")
-            self.player.level_up()
+            self.player.level += self.creature.power
         else:
             print("You lost")
-            self.player.loose_health()
+            self.player.health -= self.creature.power
         print("Your level is now {}, your health is {}".format(self.player.level, self.player.health))
 
 

@@ -7,7 +7,7 @@ class Game:
     num_of_creatures = 3
 
     def __init__(self):
-        self.creatures = [Enemy("Pikachu"), Enemy("Wyverne"), Enemy("Troll")]
+        self.creatures = [Enemy("Pikachu",1), Enemy("Wyverne",5), Enemy("Troll",3)]
         self.player = Player(1,10)
         print("Welcome to the tourney, " + self.player.name)
 
@@ -19,6 +19,7 @@ while not is_game_over:
     battle.battle_process()
     if game.player.health <= 0:
         is_game_over = True
+        print("Game over. You have reached level {}".format(game.player.level))
 
 
 
