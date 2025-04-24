@@ -13,15 +13,17 @@ class Battle:
         creature_selected = False
         while not creature_selected:
             print("Please select an enemy")
-            user_input  = input("Input 0, 1 or 2")
+            for i in range(len(self.game.creatures)):
+                print("{} - {}".format(i+1, self.game.creatures[i].name))
+            user_input  = input()
             try:
                 user_choice = int(user_input)
             except:
                 print("Your input is not correct. Try again")
                 continue
 
-            if user_choice in range(len(self.game.creatures)):
-                self.creature = self.game.creatures[int(user_choice)]
+            if user_choice in range(1, len(self.game.creatures)+1):
+                self.creature = self.game.creatures[int(user_choice)-1]
                 self.creature.level = self.creature.level_random(self.player.level)
                 creature_selected = True
                 print("You selected {}".format(self.creature.name))
