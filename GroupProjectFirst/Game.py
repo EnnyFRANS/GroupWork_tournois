@@ -11,8 +11,6 @@ class Game:
         self.player = Player(1,10)
         print("Welcome to the tourney, " + self.player.name)
 
-
-
 game = Game()
 is_game_over = False
 while not is_game_over:

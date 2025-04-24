@@ -16,3 +16,4 @@ the computer will repeatedly, give 1 or -1 randomly until the player lives reach
 every time the computer win, the player lose 1 live
 every time the computer lose, the player win a level
 - the program ended when the player lives reach 0, and will display the level of the player automatically
+                       
