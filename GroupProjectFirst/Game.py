@@ -12,7 +12,6 @@ class Game:
         print("Welcome to the tourney, " + self.player.name)
 
 
-
 game = Game()
 is_game_over = False
 while not is_game_over:
@@ -21,6 +20,7 @@ while not is_game_over:
     battle.battle_process()
     if game.player.health <= 0:
         is_game_over = True
+        print("Game over. You have reached level {}".format(game.player.level))
 
 
 
