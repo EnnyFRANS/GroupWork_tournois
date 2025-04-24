@@ -21,19 +21,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-    &quot;Python.Game.executor&quot;: &quot;Run&quot;,
-=======
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; c972233a66e5da0a8ad7d0c3783d9e96c99ab514
-    &quot;Python.initial_file.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/s_13508_dev/Desktop/Python/GroupWork_tournois&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Battle.executor": "Run",
+    "Python.Game.executor": "Run",
+    "Python.initial_file.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "last_opened_file_path": "C:/Users/s_13508_dev/Desktop/Python/GroupWork_tournois"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="initial_file" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="GroupWork_tournois" />
