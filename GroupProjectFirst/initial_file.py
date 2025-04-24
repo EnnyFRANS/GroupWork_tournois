@@ -19,23 +19,19 @@ participant = Player(1, 10)
 class Enemy:
 
     # Create the enemy's settings
-    def __init__(self,creature_name, skill_01, skill_02, creature_level):
-        self.creature_name = creature_name
-        self.skill_01 = skill_01
-        self.skill_02 = skill_02
-        self.creature_level = creature_level
+    def __init__(self):
+        self.creature_level = 0
 
     # Make the enemy's level randomly chose base of the player's level
     def level_random(self, player_level):
         return random.randint(player_level -1, player_level +1)
 
-# Creation of 3 objects
-creature_01 = Enemy("Pikachu", "thunder", "kiss",0)
-creature_02 = Enemy("Wyverne", "Storm", "Rest",0)
-creature_03 = Enemy("Troll", "Axe", "Beer",0)
+creatures = Enemy()
 
-while participant.health > 0:
-    player_choice = input("Against which creature would you like to fight ?")
+# The 3 creatures for information
+# creature_01 = ("Pikachu", "thunder", "kiss")
+# creature_02 = ("Wyverne", "Storm", "Rest")
+# creature_03 = ("Troll", "Axe", "Beer")
 
 
 
