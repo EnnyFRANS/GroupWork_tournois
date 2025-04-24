@@ -1,11 +1,5 @@
 import random
 
-
-
-participant = Player(1, 10)
-
-
-
 #creatures = Enemy()
 
 # The 3 creatures for information
