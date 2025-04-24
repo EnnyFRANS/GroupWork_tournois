@@ -33,6 +33,3 @@ creatures = Enemy()
 # creature_02 = ("Wyverne", "Storm", "Rest")
 # creature_03 = ("Troll", "Axe", "Beer")
 
-
-
-
