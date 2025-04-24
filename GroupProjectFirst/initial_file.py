@@ -26,7 +26,6 @@ class Enemy:
     def level_random(self, player_level):
         return random.randint(player_level -1, player_level +1)
 
-creatures = Enemy()
 
 # The 3 creatures for information
 # creature_01 = ("Pikachu", "thunder", "kiss")
