@@ -36,10 +36,10 @@ class Battle:
         input("Press any key to start the battle")
         if self.player.level > self.creature.level:
             print("Congratulations! You won!")
-            self.player.level_up()
+            self.player.level += self.creature.power
         else:
             print("You lost")
-            self.player.loose_health()
+            self.player.health -= self.creature.power
         print("Your level is now {}, your health is {}".format(self.player.level, self.player.health))
 
 
