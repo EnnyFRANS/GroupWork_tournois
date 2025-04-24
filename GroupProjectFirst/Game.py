@@ -13,11 +13,6 @@ class Game:
         self.personage = Personage()
         print("Welcome to the tourney, " + self.personage.name)
 
-    def check_is_game_over(self):
-        if self.personage.health <= 0:
-            return True
-        else:
-            return False
 
 
 game = Game()
@@ -26,7 +21,8 @@ while not is_game_over:
     battle = Battle(game)
     battle.select_creature()
     battle.battle_process()
-    is_game_over = game.check_is_game_over
+    if game.personage.health <= 0:
+        is_game_over = True
 
 
 
