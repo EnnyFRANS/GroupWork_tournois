@@ -2,14 +2,15 @@ from Player import *
 from Enemy import *
 from Battle import *
 import random
+#from initial_file import *
 
 class Game:
     num_of_creatures = 3
 
     def __init__(self):
         self.creatures = [Enemy("Pikachu"), Enemy("Wyverne"), Enemy("Troll")]
-        self.personage = Player()
-        print("Welcome to the tourney, " + self.personage.name)
+        self.player = Player()
+        print("Welcome to the tourney, " + self.player.name)
 
 
 
