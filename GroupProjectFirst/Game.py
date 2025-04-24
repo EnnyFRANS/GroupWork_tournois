@@ -8,8 +8,9 @@ class Game:
 
     def __init__(self):
         self.creatures = []
-        for i in range(self.num_of_creatures):
-            self.creatures.append(Creature("blabla"))
+        self.creatures.append(Creature("Pikachu"))
+        self.creatures.append(Creature("Wyverne"))
+        self.creatures.append(Creature("Troll"))
         self.personage = Personage()
         print("Welcome to the tourney, " + self.personage.name)
 

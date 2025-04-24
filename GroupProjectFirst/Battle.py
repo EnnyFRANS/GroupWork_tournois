@@ -12,7 +12,8 @@ class Battle:
     def select_creature(self):
         creature_selected = False
         while not creature_selected:
-            user_input  = input("Please select an enemy")
+            print("Please select an enemy")
+            user_input  = input("Input 0, 1 or 2")
             try:
                 user_choice = int(user_input)
             except:
