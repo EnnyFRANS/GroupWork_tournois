@@ -11,6 +11,7 @@
     div.mycontainer div {
     width:30%;
     float:left;
+    text-align:center;
     }
     </style>
 </head>
@@ -21,32 +22,38 @@
 <h2> Who do you want to fight against? </h2>
 
 <div class="mycontainer">
+           <div>
+<a href="{{ url_for('battle',enemy='Troll') }}">
+    <img width="150" height="150"
+     src="https://static.wikia.nocookie.net/ultimate-epic-battle-simulator/images/f/f3/Troll.png"
+     alt="Troll">
+<h3>Troll</h3></a>
+<p>Force: 3</p>
+    </div>
+
     <div>
-<img width="200" height="150"
-     src="https://static.wikitide.net/criticalrolewiki/thumb/5/5f/Wyvern-5e.jpg/640px-Wyvern-5e.jpg"
+<a href="{{ url_for('battle',enemy='Pikachu') }}">
+     <img width="150" height="150"
+     src="https://www.shutterstock.com/image-photo/pikachu-pokemon-isolated-jumping-260nw-2584635709.jpg"
      alt="Pikachu">
-<h3>Pikachu</h3>
+<h3>Pikachu</h3></a>
 <p>Force: 1</p>
     </div>
 
         <div>
-<img width="200" height="150"
+<a href="{{ url_for('battle', enemy='Wyvern') }}">
+    <img width="150" height="150"
      src="https://static.wikitide.net/criticalrolewiki/thumb/5/5f/Wyvern-5e.jpg/640px-Wyvern-5e.jpg"
      alt="Wyvern">
-<h3>Wyvern</h3>
+<h3>Wyvern</h3></a>
 <p>Force: 5</p>
     </div>
 
-        <div>
-<img width="200" height="150"
-     src="https://static.wikitide.net/criticalrolewiki/thumb/5/5f/Wyvern-5e.jpg/640px-Wyvern-5e.jpg"
-     alt="Wyvern">
-<h3>Wyvern</h3>
-<p>Force: 5</p>
-    </div>
 </div>
 
-<a href="{{ url_for('battle') }} ">To battle</a>
+<br>
+<h3 style="text-align:center"> Your level: {{player.level}}</h3>
+<h3 style="text-align:center">Your health: {{player.health}}</h3>
 
 </body>
 </html>
