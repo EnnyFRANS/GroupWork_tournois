@@ -54,15 +54,23 @@
              alt="Wyvern">
         {% else %}
         <img width="150" height="150"
-     src="https://static.wikia.nocookie.net/ultimate-epic-battle-simulator/images/f/f3/Troll.png"
-     alt="Troll">
+             src="https://static.wikia.nocookie.net/ultimate-epic-battle-simulator/images/f/f3/Troll.png"
+             alt="Troll">
         {% endif %}
 
         <p>{{enemy}}</p>
 
     </div>
 </div>
-<button class="button_center">Start</button>
+<div>
+    <button class="button_center">
+        {% if rnd == 1%}
+        <a href="{{ url_for('win') }}">Start</a>
+        {% else%}
+        <a href="{{ url_for('lose') }}">Start</a>
+        {% endif %}
+    </button>
+</div>
 
 
 </body>
