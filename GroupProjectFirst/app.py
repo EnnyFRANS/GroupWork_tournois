@@ -34,9 +34,5 @@ def lose(enemy):
         player.health -= 3
     return render_template('lose.html', player=player)
 
-@app.route('/game_over')
-def game_over():
-    return render_template('game_over.html')
-
 if __name__ == '__main__':
     app.run()
