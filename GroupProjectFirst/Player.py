@@ -2,7 +2,7 @@
 class Player:
 
     def __init__(self, level, health):
-        self.name = input("Hello! What is your name?")
+        #self.name = input("Hello! What is your name?")
         self.level = level
         self.health = health
 
