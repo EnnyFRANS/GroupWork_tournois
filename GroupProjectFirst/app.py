@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from Player import *
+import random
 
 app = Flask(__name__)
 
@@ -10,7 +11,8 @@ def start():
 
 @app.route('/battle/<string:enemy>')
 def battle(enemy):
-    return render_template('battle.html', enemy=enemy)
+    rnd = random.choice((-1, 1))
+    return render_template('battle.html', enemy=enemy, rnd=rnd)
 
 @app.route('/win')
 def win():
