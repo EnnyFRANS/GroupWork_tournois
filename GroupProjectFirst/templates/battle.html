@@ -18,11 +18,21 @@
         color: green;
         float: center;
         }
+
+        h1{
+        padding-left:35%}
+
+        p.title_center{
+        padding-left:34%}
+
+        button.button_center{
+        margin-left:34%}
+
     </style>
 </head>
 <body>
 <h1>Battle</h1>
-<p> The fight begin ... </p>
+<p class="title_center"> The fight begin ... </p>
 
 
 <div class="mycontainer">
@@ -32,16 +42,28 @@
              alt="Fighter">
         <h3>Fighter</h3>
     </div>
-    <div class="center"><p>VS</p></div>
+    <div class="center"><h3>VS</h3></div>
     <div>
-        <img width="200" height="150"
+        {% if enemy == "Pikachu"%}
+        <img width="150" height="150"
+             src="https://www.shutterstock.com/image-photo/pikachu-pokemon-isolated-jumping-260nw-2584635709.jpg"
+             alt="Pikachu">
+        {% elif enemy == "Wyvern"%}
+        <img width="150" height="150"
              src="https://static.wikitide.net/criticalrolewiki/thumb/5/5f/Wyvern-5e.jpg/640px-Wyvern-5e.jpg"
              alt="Wyvern">
-        <h3>Wyvern</h3>
-        <p>Force: 5</p>
+        {% else %}
+        <img width="150" height="150"
+     src="https://static.wikia.nocookie.net/ultimate-epic-battle-simulator/images/f/f3/Troll.png"
+     alt="Troll">
+        {% endif %}
+
+        <p>{{enemy}}</p>
+
     </div>
 </div>
-{{enemy}}
+<button class="button_center">Start</button>
+
 
 </body>
 </html>
