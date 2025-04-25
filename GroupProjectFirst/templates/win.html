@@ -6,11 +6,20 @@
     <style>
         h1{
         padding-left:35%}
+
+        button.button_center{
+        margin-left:34%}
+
     </style>
 </head>
 <body>
 <h1>Winning !</h1>
 <h3> Your level: {{player.level}}</h3>
 <h3>Your health: {{player.health}}</h3>
+<div>
+    <button class="button_center">
+        <a href="{{ url_for('start', player=player) }}">Try again</a>
+    </button>
+</div>
 </body>
 </html>
