@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Arena</title>
+    <style>
+    div.mycontainer {
+    width:100%;
+    overflow:auto;
+    }
+    div.mycontainer div {
+    width:30%;
+    float:left;
+    }
+    </style>
+</head>
+<body>
+
+<h3>Welcome to the  tourney!</h3>
+
+<h2> Who do you want to fight against? </h2>
+
+<div class="mycontainer">
+    <div>
+<img width="200" height="150"
+     src="https://static.wikitide.net/criticalrolewiki/thumb/5/5f/Wyvern-5e.jpg/640px-Wyvern-5e.jpg"
+     alt="Pikachu">
+<h3>Pikachu</h3>
+<p>Force: 1</p>
+    </div>
+
+        <div>
+<img width="200" height="150"
+     src="https://static.wikitide.net/criticalrolewiki/thumb/5/5f/Wyvern-5e.jpg/640px-Wyvern-5e.jpg"
+     alt="Wyvern">
+<h3>Wyvern</h3>
+<p>Force: 5</p>
+    </div>
+
+        <div>
+<img width="200" height="150"
+     src="https://static.wikitide.net/criticalrolewiki/thumb/5/5f/Wyvern-5e.jpg/640px-Wyvern-5e.jpg"
+     alt="Wyvern">
+<h3>Wyvern</h3>
+<p>Force: 5</p>
+    </div>
+</div>
+
+<a href="{{ url_for('battle') }} ">To battle</a>
+
+</body>
+</html>
