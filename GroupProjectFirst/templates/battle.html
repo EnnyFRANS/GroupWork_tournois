@@ -65,9 +65,9 @@
 <div>
     <button class="button_center">
         {% if rnd == 1%}
-        <a href="{{ url_for('win') }}">Start</a>
+        <a href="{{ url_for('win', enemy=enemy, player=player) }}">Start</a>
         {% else%}
-        <a href="{{ url_for('lose') }}">Start</a>
+        <a href="{{ url_for('lose', enemy=enemy, player=player) }}">Start</a>
         {% endif %}
     </button>
 </div>
