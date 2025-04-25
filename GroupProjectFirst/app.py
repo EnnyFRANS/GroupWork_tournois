@@ -18,7 +18,7 @@ def battle(enemy):
 def win(enemy):
     if enemy == "Pikachu":
         player.level += 1
-    elif enemy == "Wyverne":
+    elif enemy == "Wyvern":
         player.level += 5
     else:
         player.level +=3
@@ -28,7 +28,7 @@ def win(enemy):
 def lose(enemy):
     if enemy == "Pikachu":
         player.health -= 1
-    elif enemy == "Wyverne":
+    elif enemy == "Wyvern":
         player.health -= 5
     else:
         player.health -= 3
