@@ -2,10 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tournois</title>
+    <title>Battle</title>
+    <style>
+        div.mycontainer {
+        width:100%;
+        overflow:auto;
+        }
+        div.mycontainer div {
+        width:25%;
+        float:left;
+        text-align:center
+        }
+
+        div.center {
+        color: green;
+        float: center;
+        }
+    </style>
 </head>
 <body>
 <h1>Battle</h1>
-<p>3.. 2.. 1... Battle</p>
+<p> The fight begin ... </p>
+
+
+<div class="mycontainer">
+    <div>
+        <img width="200" height="150"
+             src="https://t4.ftcdn.net/jpg/01/20/35/93/360_F_120359382_dhhaabloidptkMfBcK01lFkAjZzab065.jpg"
+             alt="Fighter">
+        <h3>Fighter</h3>
+    </div>
+    <div class="center"><p>VS</p></div>
+    <div>
+        <img width="200" height="150"
+             src="https://static.wikitide.net/criticalrolewiki/thumb/5/5f/Wyvern-5e.jpg/640px-Wyvern-5e.jpg"
+             alt="Wyvern">
+        <h3>Wyvern</h3>
+        <p>Force: 5</p>
+    </div>
+</div>
+{{enemy}}
+
 </body>
 </html>
