@@ -7,7 +7,7 @@ class Game:
     num_of_creatures = 3
 
     def __init__(self):
-        self.creatures = [Enemy("Pikachu",1), Enemy("Wyverne",5), Enemy("Troll",3)]
+        self.creatures = [Enemy("Pikachu",1), Enemy("Wyvern",5), Enemy("Troll",3)]
         self.player = Player(1,10)
         print("Welcome to the tourney, " + self.player.name)
 
