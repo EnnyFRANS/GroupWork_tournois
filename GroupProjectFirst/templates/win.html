@@ -10,12 +10,15 @@
         button.button_center{
         margin-left:36%}
 
+        h3.title_center_3{
+            margin-left:35%}
+
     </style>
 </head>
 <body>
 <h1>Winning !</h1>
-<h3> Your level: {{player.level}}</h3>
-<h3>Your health: {{player.health}}</h3>
+<h3 class = "title_center_3"> Your level: {{player.level}}</h3>
+<h3 class = "title_center_3">Your health: {{player.health}}</h3>
 <div>
     <button class="button_center">
         <a href="{{ url_for('start', player=player) }}">Try again</a>
